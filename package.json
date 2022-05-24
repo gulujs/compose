@@ -1,0 +1,53 @@
+{
+  "name": "@gulujs/compose",
+  "version": "0.1.0",
+  "description": "compose middlewares",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "callback.js",
+    "callback.d.ts"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./callback": "./callback.js"
+  },
+  "typesVersions": {
+    "*": {
+      "callback": [
+        "callback.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives --ignore-path .gitignore --ext .js .",
+    "test": "mocha",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulujs/compose.git"
+  },
+  "keywords": [
+    "compose",
+    "middleware"
+  ],
+  "author": "jKey Lu <jkeylu@gmail.com> (https://github.com/jkeylu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gulujs/compose/issues"
+  },
+  "homepage": "https://github.com/gulujs/compose#readme",
+  "devDependencies": {
+    "@gulujs/eslint-config": "^0.5.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.16.0",
+    "mocha": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
