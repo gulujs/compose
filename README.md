@@ -37,5 +37,4 @@ This repo is forked from [koajs/compose](https://github.com/koajs/compose)
 
 ## License
 
-- [MIT](LICENSE)
-- [koajs/compos - License](https://github.com/koajs/compose/blob/master/LICENSE)
+[MIT](LICENSE)
